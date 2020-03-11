@@ -4,6 +4,6 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 120 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
-  has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  VALID_PASSWORD = /\A(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{6,}/
+  validates :password, presence: true, length: { minimum: 6 }, format: { with: VALID_PASSWORD}
 end
