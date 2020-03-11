@@ -10,8 +10,8 @@ gem 'puma'
 gem 'rails'
 gem 'sass-rails'
 gem 'turbolinks'
-gem 'webpacker'
 gem 'wdm' if Gem.win_platform?
+gem 'webpacker'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
