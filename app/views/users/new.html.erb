@@ -17,6 +17,11 @@
     <%= password_field_tag(:password) %>
     <%= submit_tag("Create") %>
  <% end %> -->
+  <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  <% end %>
  <%= form_for @user do |f| %>
     <%= f.text_field :username, :placeholder => 'username' %>
     <%= f.text_field :email, :placeholder => 'email' %>

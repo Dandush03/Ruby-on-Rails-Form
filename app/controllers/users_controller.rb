@@ -9,11 +9,13 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
-    if @user.save
-      redirect_to new_user_path
-    else
-      render :new
+    respond_to do |format|
+      if @user.save
+        redirect_to new_user_path
+      else
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -21,7 +23,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  def update 
+  def update
     @user = User.find(params[:id])
     if @user.update(user_params)
       redirect_to new_user_path
