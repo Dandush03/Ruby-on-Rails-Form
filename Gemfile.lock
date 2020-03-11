@@ -227,6 +227,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
+    wdm (0.1.1)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -273,6 +274,7 @@ DEPENDENCIES
   sqlite3
   turbolinks
   tzinfo-data
+  wdm
   web-console
   webdrivers
   webpacker
