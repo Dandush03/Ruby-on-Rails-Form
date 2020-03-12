@@ -1,0 +1,25 @@
+<h1>Users#edit</h1>
+<p>Find me in app/views/users/edit.html.erb</p>
+
+<!-- <form action="/users/create" method="put" accept-charset="UTF-8">
+  <input type="text"name="user[username]" placeholder="Username"><br><br>
+  <input type="text"name="user[email]" placeholder="Email"><br><br>
+  <input type="password"name="user[password]" placeholder="Password"><br><br>
+  <input type="submit" value="Submit">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form> -->
+<!--<%= form_tag("/users", method: "put") do %>
+  	<%= label_tag("Username:") %>
+    <%= text_field_tag(:username) %>
+    <%= label_tag("Email:") %>
+    <%= text_field_tag(:email) %>
+    <%= label_tag("Password:") %>
+    <%= password_field_tag(:password) %>
+    <%= submit_tag("Create") %>
+ <% end %> -->
+ <%= form_for @user do |f| %>
+    <%= f.text_field :username, :placeholder => 'username' %>
+    <%= f.text_field :email, :placeholder => 'email' %>
+    <%= f.password_field :password, :placeholder => 'password' %>
+    <%= f.submit "Edit" %>
+ <% end %>

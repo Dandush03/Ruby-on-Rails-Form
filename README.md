@@ -1,7 +1,7 @@
-# Forms [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Dandush03/capstone-build-linter)
+# Basic Rails Forms [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Dandush03/capstone-build-linter)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-> 5th collaborative microverse project.
+> 6th collaborative microverse project.
 
 ---
 
